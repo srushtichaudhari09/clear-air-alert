@@ -2,41 +2,79 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Air Quality Environmental Design System - All colors MUST be HSL */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Environmental Background System */
+    --background: 200 25% 97%;
+    --foreground: 200 15% 15%;
 
+    /* Card & Component System */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 200 15% 15%;
+    --card-border: 200 20% 90%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 200 15% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Air Quality Color System */
+    --air-excellent: 120 60% 50%;
+    --air-excellent-bg: 120 60% 95%;
+    --air-good: 90 80% 50%;
+    --air-good-bg: 90 80% 95%;
+    --air-moderate: 45 100% 55%;
+    --air-moderate-bg: 45 100% 95%;
+    --air-unhealthy: 25 85% 55%;
+    --air-unhealthy-bg: 25 85% 95%;
+    --air-hazardous: 0 75% 55%;
+    --air-hazardous-bg: 0 75% 95%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Primary Environmental Theme */
+    --primary: 200 80% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 200 80% 40%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Secondary Earth Tones */
+    --secondary: 200 15% 95%;
+    --secondary-foreground: 200 15% 25%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --muted: 200 15% 96%;
+    --muted-foreground: 200 10% 45%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --accent: 160 60% 50%;
+    --accent-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Alert System */
+    --alert: 25 85% 55%;
+    --alert-foreground: 0 0% 100%;
+    --warning: 45 100% 55%;
+    --warning-foreground: 0 0% 100%;
+    --success: 120 60% 50%;
+    --success-foreground: 0 0% 100%;
 
-    --radius: 0.5rem;
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 200 20% 88%;
+    --input: 200 20% 96%;
+    --ring: 200 80% 45%;
+
+    /* Environmental Gradients */
+    --gradient-clean: linear-gradient(135deg, hsl(200 80% 45%), hsl(160 60% 50%));
+    --gradient-polluted: linear-gradient(135deg, hsl(25 85% 55%), hsl(0 75% 55%));
+    --gradient-bg: linear-gradient(180deg, hsl(200 25% 97%), hsl(200 15% 94%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(200 20% 98%));
+
+    /* Animations & Effects */
+    --shadow-clean: 0 4px 20px hsla(200 80% 45% / 0.1);
+    --shadow-elevated: 0 8px 32px hsla(200 15% 15% / 0.08);
+    --shadow-alert: 0 4px 20px hsla(25 85% 55% / 0.2);
+
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 12px;
 
     --sidebar-background: 0 0% 98%;
 

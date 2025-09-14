@@ -22,6 +22,7 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          hover: "hsl(var(--primary-hover))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -46,6 +47,33 @@ export default {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+          border: "hsl(var(--card-border))",
+        },
+        // Air Quality Color System
+        air: {
+          excellent: "hsl(var(--air-excellent))",
+          "excellent-bg": "hsl(var(--air-excellent-bg))",
+          good: "hsl(var(--air-good))",
+          "good-bg": "hsl(var(--air-good-bg))",
+          moderate: "hsl(var(--air-moderate))",
+          "moderate-bg": "hsl(var(--air-moderate-bg))",
+          unhealthy: "hsl(var(--air-unhealthy))",
+          "unhealthy-bg": "hsl(var(--air-unhealthy-bg))",
+          hazardous: "hsl(var(--air-hazardous))",
+          "hazardous-bg": "hsl(var(--air-hazardous-bg))",
+        },
+        // Alert System
+        alert: {
+          DEFAULT: "hsl(var(--alert))",
+          foreground: "hsl(var(--alert-foreground))",
+        },
+        warning: {
+          DEFAULT: "hsl(var(--warning))",
+          foreground: "hsl(var(--warning-foreground))",
+        },
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
@@ -62,6 +90,21 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      backgroundImage: {
+        "gradient-clean": "var(--gradient-clean)",
+        "gradient-polluted": "var(--gradient-polluted)",
+        "gradient-bg": "var(--gradient-bg)",
+        "gradient-card": "var(--gradient-card)",
+      },
+      boxShadow: {
+        clean: "var(--shadow-clean)",
+        elevated: "var(--shadow-elevated)",
+        alert: "var(--shadow-alert)",
+      },
+      transitionTimingFunction: {
+        smooth: "var(--transition-smooth)",
+        bounce: "var(--transition-bounce)",
       },
       keyframes: {
         "accordion-down": {
